@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-cream: #F8EDE3;
+  --primary-gold: #D4AF37;
+  --text-dark: #1A1A1A;
+}
+
+body {
+  @apply bg-[#F8EDE3] text-[#1A1A1A] antialiased overflow-x-hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Custom transitions */
+.smooth-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Luxury button */
+.btn-luxury {
+  @apply px-8 py-3 bg-luxury-black text-white hover:bg-gold-dark smooth-transition tracking-widest uppercase text-sm;
+}
+
+.btn-outline-luxury {
+  @apply px-8 py-3 border border-luxury-black text-luxury-black hover:bg-luxury-black hover:text-white smooth-transition tracking-widest uppercase text-sm;
+}
+
+/* Slider animations */
+.slide-in {
+  @apply transform transition-all duration-700;
+}
+
+/* Glassmorphism for floating button */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
